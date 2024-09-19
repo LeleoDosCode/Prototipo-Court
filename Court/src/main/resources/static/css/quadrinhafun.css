@@ -1,0 +1,361 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   justify-content: center;
+   align-items: center;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   width: 90%; /* Define a largura da div container como 90% da página */
+   margin: 0 auto; /* Centraliza a div container horizontalmente */
+   height: 100vh;
+   padding: 20px;
+   margin-top: 70px;
+}
+
+.image-section img{
+   height: 500px;
+}
+.image-section {
+   flex: 0 0 60%; /* A image-section continua ocupando 60% da largura do container */
+   text-align: center;
+
+}
+
+.main-image {
+   width: 100%;
+   max-width: 80%; /* Garante que a imagem ocupe toda a largura da div */
+   border: 2px solid #ccc;
+   border-radius: 5px;
+}
+
+.thumbnails {
+   margin-top: 10px;
+   display: flex;
+   justify-content: center;
+}
+
+.thumbnails img{
+   width: 70px;
+   height: 70px;
+}
+
+.thumbnail {
+   width: 100px;
+   height: 100px;
+   margin: 0 5px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.info-section {
+   flex: 0 0 40%; /* A info-section continua ocupando 40% da largura do container */
+   padding-left: 20px;
+   align-items: start;
+}
+
+h1 {
+   font-size: 40px;
+   color: #333;
+   margin-bottom: 10px;
+}
+
+p {
+   font-size: 16px;
+   margin-bottom: 20px;
+   color: #666;
+}
+
+.reservar {
+   background-color: #4a5fd8;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   margin-top: 160px;
+   height: 50px;
+   width: 500px;
+}
+
+button:hover {
+   background-color: #3b4bb1;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   justify-content: center;
+   align-items: center;
+   color: black; /* Define a cor padrão do texto como preto */
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   width: 90%;
+   margin: 0 auto;
+   height: 100vh;
+   padding: 20px;
+   margin-top: 70px;
+}
+
+.image-section img {
+   height: 500px;
+}
+
+.image-section {
+   flex: 0 0 60%;
+   text-align: center;
+}
+
+.main-image {
+   width: 100%;
+   max-width: 80%;
+   border: 2px solid #ccc;
+   border-radius: 5px;
+}
+
+.thumbnails {
+   margin-top: 10px;
+   display: flex;
+   justify-content: center;
+}
+
+.thumbnails img {
+   width: 70px;
+   height: 70px;
+}
+
+.thumbnail {
+   width: 100px;
+   height: 100px;
+   margin: 0 5px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.info-section {
+   flex: 0 0 40%;
+   padding-left: 20px;
+   align-items: start;
+}
+
+h1 {
+   font-size: 40px;
+   color: black; /* Garante que o título esteja na cor preta */
+   margin-bottom: 10px;
+}
+
+p {
+   font-size: 16px;
+   margin-bottom: 20px;
+   color: black; /* Define a cor do parágrafo como preta */
+}
+
+.reservar {
+   background-color: #4a5fd8;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   margin-top: 160px;
+   height: 50px;
+   width: 500px;
+}
+
+button:hover {
+   background-color: #3b4bb1;
+}
+
+/* Modal Estilo */
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+.modal h2,label,input,option,select{
+color: black;
+}
+
+.modal-content {
+   background-color: #fff;
+   margin: 15% auto;
+   padding: 20px;
+   width: 80%;
+   max-width: 400px;
+   border-radius: 5px;
+}
+
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.modal input,
+.modal select {
+   width: 100%;
+   padding: 10px;
+   margin: 10px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.modal button {
+   width: 100%;
+   padding: 10px;
+   background-color: #4a5fd8;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+.modal button:hover {
+   background-color: #3b4bb1;
+}
+/* Estilo do modal de confirmação */
+.modal.confirmacao {
+ display: none;
+ position: fixed;
+ z-index: 1000;
+ padding-top: 100px;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.7); /* Fundo escurecido */
+ animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}
+
+.modal-content.confirmacao-content {
+ background-color: #fff;
+ margin: auto;
+ padding: 20px;
+ border-radius: 15px;
+ width: 80%;
+ max-width: 500px;
+ text-align: center;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+ animation: slideUp 0.4s;
+}
+
+@keyframes slideUp {
+ from {transform: translateY(50px); opacity: 0;}
+ to {transform: translateY(0); opacity: 1;}
+}
+
+.close-confirmacao {
+ color: #888;
+ float: right;
+ font-size: 30px;
+ font-weight: bold;
+ cursor: pointer;
+}
+
+.close-confirmacao:hover {
+ color: #555;
+}
+
+.icone-sucesso {
+ color: #4CAF50;
+ font-size: 80px;
+ margin-bottom: 20px;
+}
+
+.modal h2,label,input,option,select, span, strong{
+color: black;
+
+}
+.modal-footer button{
+text-align: center;
+}
+.mensagem-confirmacao {
+ font-size: 18px;
+ margin-bottom: 20px;
+ color: #333;
+}
+
+.confirmacao-info {
+ list-style: none;
+ padding: 0;
+ margin: 20px 0;
+ text-align: left;
+ font-size: 16px;
+ color: #555;
+}
+
+.confirmacao-info li {
+ margin-bottom: 10px;
+}
+
+.modal-footer {
+ display: flex;
+ justify-content: space-between;
+ width: 200px;
+}
+.modal-footer {
+ display: flex;
+ justify-content: center;
+ width: 100%;
+}
+.modal-footer button{
+ display: flex;
+ margin: 6px;
+ justify-content: space-between;
+ width: 250px;
+ text-align: center;
+}
+
+.btn-confirmacao {
+ padding: 10px 20px;
+ background-color: #007BFF;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+ width: 100px;
+}
+
+.btn-confirmacao:hover {
+ background-color: #0056b3;
+}
